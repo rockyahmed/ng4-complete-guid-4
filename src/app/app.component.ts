@@ -1,24 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'ng4-complete-guid-4';
+export class AppComponent {
+  title = 'ng4-complete-guid-3';
 
-  defaultComponent = 'recipes';
-
-  ngOnInit(): void {
-  }
-
-  constructor () {
-
-  }
+  loadedFeature = 'recipe';
 
   onNavigate(feature: string){
-    this.defaultComponent = feature;
+    this.loadedFeature = feature;
   }
-
 }
