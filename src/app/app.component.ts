@@ -8,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'ng4-complete-guid-4';
 
+  defaultComponent = 'recipes';
 
   ngOnInit(): void {
   }
 
   constructor () {
 
+  }
+
+  onNavigate(feature: string){
+    this.defaultComponent = feature;
   }
 
 }
